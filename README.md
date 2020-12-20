@@ -5,11 +5,22 @@ Project Overview:
 This project involved the creation and binding of a BPlus Tree indexing scheme to a column store database. The logic for BPlusTree creation was added into the BPusTree.java file, and logic for binding to the table itself is included in Table.java. A detailed overview of the project is given in the Project Overview file
 
 Running Instructions:
-make testtree runs a test suite of selected test cases to ensure the correctness of the BPlusTree
+```bash
+make testtree 
+```
 
-make testtable ensures that the BPlusTree has been correctly bound to the column store database
+runs a test suite of selected test cases to ensure the correctness of the BPlusTree
 
-make bench provides a benchmark comparison of insertion, deletion, and selection times when using selection on the clustered/nonclustered BPlusTree attribrutes against the unindexed attributes.
+```bash
+make testtable 
+```
+
+ensures that the BPlusTree has been correctly bound to the column store database
+
+```bash
+make bench 
+```
+provides a benchmark comparison of insertion, deletion, and selection times when using selection on the clustered/nonclustered BPlusTree attribrutes against the unindexed attributes.
 
 If using Windows, use the following terminal command line instructions:
 
